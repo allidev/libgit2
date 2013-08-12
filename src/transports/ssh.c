@@ -23,6 +23,7 @@ static const char cmd_receivepack[] = "git-receive-pack";
 static bool is_ssh2_initiated = false;
 static unsigned int ssh2_session_count = 0;
 static bool is_socket_zero = false;
+static pthread_mutex_t mutexsum = PTHREAD_MUTEX_INITIALIZER;
 
 #define CHUNK_SIZE 32700
 
@@ -277,7 +278,6 @@ static int ssh_action(
 {
 	ssh_subtransport *t = (ssh_subtransport *)smart_transport;
 	const char *default_port = "22";
-    pthread_mutex_t mutexsum = PTHREAD_MUTEX_INITIALIZER;
     
 	if (!stream)
 		return -1;
