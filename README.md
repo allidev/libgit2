@@ -104,6 +104,11 @@ See [the wiki]
 (https://github.com/libgit2/libgit2/wiki/Building-libgit2-on-Windows)
 for more detailed instructions.
 
+Android
+-------
+
+cmake -DCMAKE_TOOLCHAIN_FILE=../android.toolchain.cmake -DANDROID_NDK=~/android/ndk -DCMAKE_BUILD_TYPE=Release -DANDROID_ABI="armeabi-v7a with NEON" -DOPENSSL_CRYPTO_LIBRARY=~/data/vault-deps/prebuilt/android/19/armeabi/lib/libcrypto.so -DOPENSSL_SSL_LIBRARY=~/data/vault-deps/prebuilt/android/19/armeabi/lib/libssl.so -DOPENSSL_INCLUDE_DIR=~/data/vault-deps/prebuilt/android/19/armeabi/include -DBUILD_CLAR=OFF -DTHREADSAFE=ON ..
+
 Language Bindings
 ==================================
 
