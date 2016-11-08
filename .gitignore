@@ -26,6 +26,7 @@ msvc/Release/
 *.aps
 *.cmake
 !cmake/Modules/*.cmake
+!android.toolchain.cmake
 .DS_Store
 *~
 tags
