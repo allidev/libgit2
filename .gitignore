@@ -27,6 +27,7 @@ msvc/Release/
 *.cmake
 !cmake/Modules/*.cmake
 !android.toolchain.cmake
+!crystax.toolchain.cmake
 .DS_Store
 *~
 tags
