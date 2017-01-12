@@ -107,7 +107,7 @@ for more detailed instructions.
 Android
 -------
 
-cmake -DCMAKE_TOOLCHAIN_FILE=../crystax.toolchain.cmake -DANDROID_NDK=~/android/crystax-ndk -DCMAKE_BUILD_TYPE=Release -DANDROID_ABI="armeabi-v7a with NEON" -DANDROID_NATIVE_API_LEVEL=21 -DOPENSSL_CRYPTO_LIBRARY=~/data/vault-deps/prebuilt/android/19/armeabi/lib/libcrypto.so -DOPENSSL_SSL_LIBRARY=~/data/vault-deps/prebuilt/android/19/armeabi/lib/libssl.so -DOPENSSL_INCLUDE_DIR=~/data/vault-deps/prebuilt/android/19/armeabi/include -DBUILD_CLAR=OFF -DTHREADSAFE=ON -DLIBSSH2_LIBRARY=1 -DLIBSSH2_FOUND=1 -DLIBSSH2_INCLUDE_DIR=~/data/vault-deps/prebuilt/android/19/armeabi/include/libssh2 -DLIBSSH2_LIBRARIES=~/data/vault-deps/prebuilt/android/19/armeabi/lib/libssh2.so ..
+	$ cmake -DCMAKE_TOOLCHAIN_FILE=../crystax.toolchain.cmake -DANDROID_NDK=~/android/crystax-ndk -DCMAKE_BUILD_TYPE=Release -DANDROID_ABI="armeabi-v7a with NEON" -DANDROID_NATIVE_API_LEVEL=21 -DOPENSSL_CRYPTO_LIBRARY=~/data/vault-deps/prebuilt/android/19/armeabi/lib/libcrypto.so -DOPENSSL_SSL_LIBRARY=~/data/vault-deps/prebuilt/android/19/armeabi/lib/libssl.so -DOPENSSL_INCLUDE_DIR=~/data/vault-deps/prebuilt/android/19/armeabi/include -DBUILD_CLAR=OFF -DTHREADSAFE=ON -DLIBSSH2_LIBRARY=1 -DLIBSSH2_FOUND=1 -DLIBSSH2_INCLUDE_DIR=~/data/vault-deps/prebuilt/android/19/armeabi/include/libssh2 -DLIBSSH2_LIBRARIES=~/data/vault-deps/prebuilt/android/19/armeabi/lib/libssh2.so ..
 
 Language Bindings
 ==================================
