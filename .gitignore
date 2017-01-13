@@ -16,6 +16,8 @@
 *.swp
 build/
 build-amiga/
+bld/
+bld-*/
 tests/tmp/
 msvc/Debug/
 msvc/Release/
