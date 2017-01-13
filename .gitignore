@@ -13,6 +13,7 @@
 *.gcov
 .lock-wafbuild
 .waf*
+*.swp
 build/
 build-amiga/
 tests/tmp/
