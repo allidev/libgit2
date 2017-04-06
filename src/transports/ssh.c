@@ -301,7 +301,10 @@ static int ssh_action(
         // socket has to be a unique number
 		pthread_mutex_lock(&mutexsum);
 		if (gitno_connect(&t->socket, t->host, t->port, 0) < 0)
+		{
+			pthread_mutex_unlock(&mutexsum);
 			return -1;
+		}
         if (t->socket.socket == 0) {
             is_socket_zero = true;
         }
